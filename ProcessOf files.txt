@@ -1,0 +1,28 @@
+06/01/2017
+Sandeep Pathak
+Code test
+
+
+Execute index.php file and pass data according to given format and it will gives exact output. 
+
+
+My point-of-sale scanner program has several classes:
+Terminal class in terminal.php
+This class is an interface for scanning products and getting total cost (volume + unit) for products.
+
+Invoice class in invoice.php
+This class tallys the number of times each product is scanned and calculates the total cost of all scanned products.
+
+Product class in product.php
+Represents a product object. Contains information about that product's name, volume and unit prices.
+
+Inventory class in inventory.php
+Stores the products, including adding and removing products.
+
+Listing class in listing.php
+This class provides operations to update a product unit and volume costs and other information about the product, such
+as whether the product is in the inventory.
+
+
+NOTE:
+I did not handle all possibie exceptions if someone tries inputting non-numeric or negative unit and volume prices, except for the add() method in Inventory class.  
